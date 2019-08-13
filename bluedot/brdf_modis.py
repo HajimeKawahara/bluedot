@@ -1,9 +1,9 @@
 #!/usr/bin/python
-import rossli
-import geometry
-import read_hdf_MCD
+from bluedot import rossli
+from bluedot import geometry
+from bluedot import read_hdf_MCD
 import numpy as np
-import blue_calendar
+from bluedot import blue_calendar
 
 
 def get_BRDF_parameters(jd,ispec,mcd):

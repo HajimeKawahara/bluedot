@@ -70,7 +70,7 @@ if __name__ == "__main__":
         sys.exit()
 
     if args.i[0] <= 0:
-        sys.exit()
+        sys.exit("[Error] PM ID <= 0. Set -i.")
         
     pmov=loadpmov(pfile)
     pmov.setPMid(args.i[0])

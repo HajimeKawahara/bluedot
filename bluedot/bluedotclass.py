@@ -35,13 +35,13 @@ def uniteR(zeta, Phiv, theta, phi):
 class PlanetData:
     
     def __init__(self):
-        self.mcdpath = "/home/kawahara/sotica/data/MODIS/MCD43C1/MCD43C1*.hdf"
-        self.wrappath = "/home/kawahara/sotica/bluedot/wrapgpc.so"
-        self.d1path = "/home/kawahara/sotica/data/ISCCP/d1"
-        self.default_input = "/home/kawahara/sotica/bluedot/input/template.INP"
+        self.mcdpath = "/home/kawahara/bluedot/earth/MODIS/MCD43C1/MCD43C1*.hdf"
+        self.wrappath = "/home/kawahara/bluedot/bluedot/wrapgpc.so"
+        self.d1path = "/home/kawahara/bluedot/earth/ISCCP/d1"
+        self.default_input = "/home/kawahara/bluedot/bluedot/input/template.INP"
 
     def modismeanpath(self,pcol):
-        return "/home/kawahara/sotica/data/mean2008/mean2008_"+str(pcol.ispec)+".npz"
+        return "/home/kawahara/bluedot/earth/mean2008/mean2008_"+str(pcol.ispec)+".npz"
 
 class PlanetGeometry:
     

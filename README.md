@@ -9,35 +9,45 @@ Blue-dot (disk-integrated Earth) simulator.
 - healpy
 - libradtran 2
 
+### Data source
+
+- ISCCP (cloud data)
+- MODIS (albedo)
+
+Download bluedot.data.tar.gz from http://secondearths.sakura.ne.jp/bluedot/bluedot.data.tar.gz
+Untar the file and put directory as bluedot/earth.
+
+Download bluedot.data.tar.gz from http://secondearths.sakura.ne.jp/bluedot/librad.data.tar.gz
+Untar the file and put directory as bluedot/data.
+
+
+
 ###
 
 - read_isccp.py is the python binding for IO of ISCCP/GPC files. To use it, compile fortran (90) files as
+In bluedot directory, execute
 
 ````
 make
 ````
-
--Generating a pickle file
-
-
--Generating executables
+Then, you'll find wrapgpc.so.
 
 
--Emulating (for debugging)
+- Generate a pickle file (setting file) for PlanetMovie
 
+````
+python makemovie.py -p 
+````
+
+- Make a snapshot
+
+````
+python makemovie.py -f test.pickle -i 1
+````
+
+- Emulating (for debugging)
+
+````
  python ../makeexe.py -f emulate.pickle -i 1 30 -n 1 -e
-   
+````
 
-
-###
-
-makeexe - makemovie - snapshot - generate_globe - brdf_modis - blue_calendar 
-
-
-
-BRDF 
-
-fisox 
-<- set_gsurface_brdf (generate_globe) 
-<- brdf_modis.get_BRDF_parameters (brdf_modis)
-<- get_intp_coefficient (blue_calendar)

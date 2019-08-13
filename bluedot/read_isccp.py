@@ -136,9 +136,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     gpc=GPC()
-    gpc.set_path("/home/kawahara/sotica/data/ISCCP/d1/")
+    gpc.set_path("/home/kawahara/bluedot/earth/ISCCP/d1/")
     gpc.load_anc()
     gpc.load_gpclist()
-    phi, theta, galt, cth, meantc, meantau, meanwp, meanpc, ctp, ntot, ncloud, surfaceclass, datearr = read_gpc(gpc.gpcfile[0],"/home/kawahara/sotica/bluedot/wrapgpc.so")
+    phi, theta, galt, cth, meantc, meantau, meanwp, meanpc, ctp, ntot, ncloud, surfaceclass, datearr = read_gpc(gpc.gpcfile[0],"/home/kawahara/bluedot/bluedot/wrapgpc.so")
 
 #    print(("UT=", datearr))

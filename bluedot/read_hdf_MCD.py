@@ -3,8 +3,8 @@ import numpy as np
 from pyhdf.SD import SD, SDC
 import sys
 import glob
-import blue_calendar
-import geometry
+from bluedot import blue_calendar
+from bluedot import geometry
 nlat_MCD43C1 = 3600
 nlon_MCD43C1 = 7200
     

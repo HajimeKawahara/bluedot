@@ -1,11 +1,11 @@
 #!/usr/bin/python
-import rossli
-import geometry
-import read_hdf_MCD
-import blue_calendar
-import brdf_modis
-import read_isccp
-import resamp_healpix
+from bluedot import rossli
+from bluedot import geometry
+from bluedot import read_hdf_MCD
+from bluedot import blue_calendar
+from bluedot import brdf_modis
+from bluedot import read_isccp
+from bluedot import resamp_healpix
 import healpy as hp
 import numpy as np
 import argparse
@@ -13,11 +13,11 @@ from astropy.time import Time
 import glob
 from datetime import datetime
 import time
-from read_isccp import GPC
-from bluedotclass import PlanetColor
-from bluedotclass import PlanetGeometry
-from bluedotclass import PlanetData
-from read_hdf_MCD import ModisMCD
+from bluedot.read_isccp import GPC
+from bluedot.bluedotclass import PlanetColor
+from bluedot.bluedotclass import PlanetGeometry
+from bluedot.bluedotclass import PlanetData
+from bluedot.read_hdf_MCD import ModisMCD
 
 
 def initgg(pdata,pcol):

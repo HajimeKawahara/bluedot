@@ -2,7 +2,7 @@
 import numpy as np
 import argparse
 import sys
-import iouvspec
+from bluedot import iouvspec
 
 class LibRadtran:
 
