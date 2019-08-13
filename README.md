@@ -17,7 +17,7 @@ Blue-dot (disk-integrated Earth) simulator.
 Download bluedot.data.tar.gz from http://secondearths.sakura.ne.jp/bluedot/bluedot.data.tar.gz
 Untar the file and put directory as bluedot/earth.
 
-Download bluedot.data.tar.gz from http://secondearths.sakura.ne.jp/bluedot/librad.data.tar.gz
+Download bluedot.data.tar.gz from http://secondearths.sakura.ne.jp/bluedot/librad.data.tar
 Untar the file and put directory as bluedot/data.
 
 
