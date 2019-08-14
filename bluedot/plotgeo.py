@@ -88,7 +88,7 @@ def plotsnapshot(radfile):
         fcl[ipix]=np.sum(arr7[i])
     
 
-    hp.mollview(tradcl*fcl+tradcs*(1.0-fcl), title="simple sum rad (post)", flip="geo", cmap=plt.cm.pink, min=0.0,max=100000)
+    hp.mollview(tradcl*fcl+tradcs*(1.0-fcl), title="simple sum rad (post)", flip="geo", cmap=plt.cm.pink, min=0.0,max=30000)
 #    hp.orthview(trad, title="simple sum rad", flip="geo", cmap=plt.cm.jet, min=0.0)
     hp.graticule(color="orange")
 
