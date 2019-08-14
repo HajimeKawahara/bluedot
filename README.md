@@ -5,7 +5,7 @@ Blue-dot (disk-integrated Earth) simulator.
 ## Requirements for Installation
 
 - Python 3
-- python-hdf4
+- pyhdf or python-hdf4
 - healpy
 - libradtran 2
 
