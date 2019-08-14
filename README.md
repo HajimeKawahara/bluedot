@@ -48,6 +48,12 @@ python makemovie.py -p
 python makemovie.py -f test.pickle -i 1
 ````
 
+- Plot a snapshot
+
+````
+python plotgeo.py -i 1
+````
+
 - Emulate (for debugging)
 
 ````
