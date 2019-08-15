@@ -31,7 +31,7 @@ Also, libradtran2 uses python 2.7 but bluedot uses python 3. So, when installing
 conda create -n py27 python=2.7 anaconda
 source activate py27
 ```
-Then, configure, make, make install in libRadt
+Then, configure, make, make install in libRadtran.
 
 
 ### Data 

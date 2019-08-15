@@ -31,7 +31,7 @@ def compute_snapshot(pdata,pgeo,pcol,inpdir="INP"):
     gpc,mcd = gg.initgg(pdata,pcol)
     fisox, fvolx, fgeox, landfx=gg.set_gsurface_brdf(pgeo, pcol, mcd)
     fcl, meantauxd, cthx, meanwpxd,iselmapt,iselmapw, vimask=gg.set_gsurface_clouds_vi(pdata,pgeo,gpc)
-    plg.plotall(fisox, fvolx, fgeox, landfx, fcl, meantauxd, cthx, meanwpxd,iselmapt,iselmapw, vimask, cmap=plt.cm.jet)
+#    plg.plotall(fisox, fvolx, fgeox, landfx, fcl, meantauxd, cthx, meanwpxd,iselmapt,iselmapw, vimask, cmap=plt.cm.jet)
 
     others=[fisox, fvolx, fgeox, landfx, fcl, meantauxd, cthx, meanwpxd,iselmapt,iselmapw, vimask]
 

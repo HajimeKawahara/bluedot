@@ -1,9 +1,6 @@
 #!/usr/bin/python
 import sys
 import argparse
-import matplotlib
-import matplotlib.pyplot as plt
-import pylab
 import numpy as np
 import healpy as hp
 import time
