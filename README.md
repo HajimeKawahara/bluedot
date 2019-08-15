@@ -7,9 +7,32 @@ Blue-dot (disk-integrated Earth) simulator.
 - Python 3
 - pyhdf or python-hdf4 (for instance, conda install -c conda-forge pyhdf)
 - healpy
-- libradtran 2
+- libradtran 2 (also netcdf4)
 
 Add your_install_directory/bluedot to your PYTHONPATH.
+
+### Some tips for install
+
+
+For installing libradtran 2.0.2, first you need to install netcdf4 (I needed to put -fPIC option in CFLAGS and CPPFLAGS in Makefile). Also
+
+```
+sudo mkdir /usr/local/share/libRadtran/data/ic/yang2013
+```
+and make a soft link of libRadtran2.0.2/data to the directory upper to the working directory.
+
+Remove ".sol" in ic/yang2013/Makefile
+```
+DATAFILE = $(wildcarf *.sol.cdf)
+```
+Also, libradtran2 uses python 2.7 but bluedot uses python 3. So, when installing, I switch to py27 using conda,
+
+```
+conda create -n py27 python=2.7 anaconda
+source activate py27
+```
+Then, configure, make, make install in libRadt
+
 
 ### Data 
 
